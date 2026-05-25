@@ -352,6 +352,14 @@ body > *{position:relative;z-index:1}
   <div class="header-wave"></div>
 </header>
 
+<div class="container">
+  <div class="config-notice" id="configNotice">
+    ⚙️ <strong>管理者設定：</strong>請將下方 JS 中的 <code>GOOGLE_SCRIPT_URL</code> 替換為您的 Apps Script Web App 網址，完成後可刪除此提示框。
+    <a href="#" onclick="document.getElementById('configNotice').style.display='none';return false;" style="margin-left:8px;color:var(--navy)">隱藏</a>
+  </div>
+  <div id="app"></div>
+</div>
+
 <footer class="site-footer">
   定然數位公關有限公司 &nbsp;·&nbsp; NOTALONE DIGITAL PR &nbsp;·&nbsp; 公關行銷不難
 </footer>
@@ -524,10 +532,6 @@ async function submitResult(){
   const btn=document.getElementById('btnSubmit');
   const msg=document.getElementById('statusMsg');
   btn.disabled=true;msg.className='status-msg sending';msg.textContent='送出中，請稍候…';
-  if(!GOOGLE_SCRIPT_URL||GOOGLE_SCRIPT_URL==='https://script.google.com/macros/s/AKfycbxY7l51bI1DoTb9OrzE1YdyNUOSZHes2zE0rSdWzmTb_uAyk1Lv3miMBMh9AAGBCM9QjQ/exec'){
-    setTimeout(()=>{msg.className='status-msg fail';msg.textContent='⚠️ 尚未設定 Google Script URL。本地測試模式：資料已列印至 Console。';console.log('【定然 BD Quiz Result】',payload);btn.disabled=false;},800);
-    return;
-  }
   try{
     await fetch(GOOGLE_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
     state.submitted=true;msg.className='status-msg success';msg.textContent='✓ 結果已成功送出，面試官將在收到後與您聯繫。';btn.textContent='✓ 已送出';
