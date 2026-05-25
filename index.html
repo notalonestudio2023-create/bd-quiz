@@ -352,6 +352,14 @@ body > *{position:relative;z-index:1}
   <div class="header-wave"></div>
 </header>
 
+<div class="container">
+  <div class="config-notice" id="configNotice">
+    ⚙️ <strong>管理者設定：</strong>請將下方 JS 中的 <code>GOOGLE_SCRIPT_URL</code> 替換為您的 Apps Script Web App 網址，完成後可刪除此提示框。
+    <a href="#" onclick="document.getElementById('configNotice').style.display='none';return false;" style="margin-left:8px;color:var(--navy)">隱藏</a>
+  </div>
+  <div id="app"></div>
+</div>
+
 <footer class="site-footer">
   定然數位公關有限公司 &nbsp;·&nbsp; NOTALONE DIGITAL PR &nbsp;·&nbsp; 公關行銷不難
 </footer>
