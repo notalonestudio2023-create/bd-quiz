@@ -298,7 +298,7 @@ function renderQuiz(){
       <button class="btn" onclick="prev()" ${state.cur===0?'disabled':''}>← 上一題</button>
       <span style="font-size:.78rem;color:var(--ink-3)">${state.answers.filter(a=>a!==null).length} / ${QUESTIONS.length} 已作答</span>
       ${isLast
-        ? `<button class="btn btn-primary" onclick="finishQuiz()">交卷 →</button>`
+        ? `<button class="btn btn-primary" onclick="submitAndFinish()" ${state.answers[state.cur]===null?'disabled':''}>送出答卷 →</button>`
         : `<button class="btn btn-primary" onclick="next()" ${state.answers[state.cur]===null?'disabled':''}>下一題 →</button>`
       }
     </div>`;
@@ -331,7 +331,7 @@ function renderResult(){
         <div class="status-msg" id="statusMsg"></div>
       </div>
 
-      <div class="score-card">
+      <div class="score-card" id="scoreCard" style="display:${state.submitted?'block':'none'}">
         <div class="score-ring">
           <div class="score-big">${score}</div>
           <div class="score-denom">/ 100</div>
@@ -363,6 +363,17 @@ function renderResult(){
 function pick(i){state.answers[state.cur]=i;render();}
 function prev(){if(state.cur>0){state.cur--;render();}}
 function next(){if(state.answers[state.cur]===null)return;state.cur++;render();}
+
+async function submitAndFinish(){
+  const unanswered=state.answers.filter(a=>a===null).length;
+  if(unanswered>0){
+    if(!confirm(`您還有 ${unanswered} 題未作答，確定要送出答卷嗎？`))return;
+  }
+  clearInterval(state.timerInterval);
+  state.phase='result';
+  render();
+  await submitResult();
+}
 
 function finishQuiz(){
   const unanswered=state.answers.filter(a=>a===null).length;
@@ -452,6 +463,8 @@ async function submitResult(){
     msg.className='status-msg success';
     msg.textContent='✓ 答卷已成功送出，請主動傳訊息給 HR 確認成績。';
     btn.textContent='✓ 答卷已送出';
+    const sc=document.getElementById('scoreCard');
+    if(sc)sc.style.display='block';
     document.getElementById('nextstepBox').classList.add('show');
   } catch(e){
     msg.className='status-msg fail';
