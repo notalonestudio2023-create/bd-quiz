@@ -3,340 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>定然數位公關｜BD 職位第一階段評測</title>
+<title>定然數位公關行銷 BD 招募｜第一階段筆試考題</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root {
-  --navy: #1B3A6B;
-  --navy-deep: #0D2247;
-  --navy-mid: #2A5298;
-  --navy-light: #4A7AC4;
-  --navy-pale: #D6E4F7;
-  --mist: #EEF4FC;
-  --fog: #F5F8FD;
-  --white: #ffffff;
-  --ink: #1a2840;
-  --ink-2: #3a4f6e;
-  --ink-3: #7a90a8;
-  --border: #c8d8ec;
-  --correct: #1a6b45;
-  --correct-bg: #d4f0e4;
-  --wrong: #8B2020;
-  --wrong-bg: #fae8e8;
-  --serif: "Noto Serif TC", serif;
-  --sans: "Noto Sans TC", sans-serif;
+:root{
+  --navy:#1B3A6B;--navy-deep:#0D2247;--navy-mid:#2A5298;--navy-light:#4A7AC4;
+  --navy-pale:#D6E4F7;--mist:#EEF4FC;--fog:#F5F8FD;--white:#ffffff;
+  --ink:#1a2840;--ink-2:#3a4f6e;--ink-3:#7a90a8;--border:#c8d8ec;
+  --correct:#1a6b45;--correct-bg:#d4f0e4;--wrong:#8B2020;--wrong-bg:#fae8e8;
+  --serif:"Noto Serif TC",serif;--sans:"Noto Sans TC",sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
 body{font-family:var(--sans);background:var(--fog);color:var(--ink);min-height:100vh;position:relative;overflow-x:hidden}
+body::before{content:"";position:fixed;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 120% 60% at 15% 10%,rgba(74,122,196,.12) 0%,transparent 60%),radial-gradient(ellipse 80% 80% at 85% 20%,rgba(27,58,107,.08) 0%,transparent 55%),linear-gradient(180deg,#EEF4FC 0%,#F5F8FD 40%,#EDF2FA 100%);pointer-events:none;z-index:0}
+body>*{position:relative;z-index:1}
 
-/* ─── watercolor background ─── */
-body::before{
-  content:"";
-  position:fixed;top:0;left:0;right:0;bottom:0;
-  background:
-    radial-gradient(ellipse 120% 60% at 15% 10%, rgba(74,122,196,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 80% 80% at 85% 20%, rgba(27,58,107,0.08) 0%, transparent 55%),
-    radial-gradient(ellipse 100% 50% at 50% 90%, rgba(42,82,152,0.06) 0%, transparent 50%),
-    linear-gradient(180deg, #EEF4FC 0%, #F5F8FD 40%, #EDF2FA 100%);
-  pointer-events:none;
-  z-index:0;
-}
-body > *{position:relative;z-index:1}
-
-/* ─── header ─── */
-.site-header{
-  background:linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, var(--navy-mid) 100%);
-  padding:0;
-  position:relative;
-  overflow:hidden;
-}
-.site-header::before{
-  content:"";
-  position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse 200% 150% at -10% 120%, rgba(255,255,255,0.07) 0%, transparent 50%),
-    radial-gradient(ellipse 80% 200% at 110% -20%, rgba(255,255,255,0.05) 0%, transparent 50%);
-}
-.header-inner{
-  max-width:760px;margin:0 auto;
-  padding:2rem 1.5rem 1.75rem;
-  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
-  position:relative;
-}
-.header-logo img{
-  height:52px;width:auto;
-  filter:brightness(0) invert(1);
-  opacity:0.92;
-}
+.site-header{background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 50%,var(--navy-mid) 100%);padding:0;position:relative;overflow:hidden}
+.site-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 200% 150% at -10% 120%,rgba(255,255,255,.07) 0%,transparent 50%)}
+.header-inner{max-width:760px;margin:0 auto;padding:1.75rem 1.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;position:relative}
+.header-logo img{height:48px;width:auto;filter:brightness(0) invert(1);opacity:.92}
 .header-text{text-align:right}
-.header-sub{
-  font-family:var(--sans);
-  font-size:0.68rem;font-weight:300;
-  letter-spacing:0.18em;text-transform:uppercase;
-  color:rgba(255,255,255,0.55);
-  margin-bottom:0.4rem;
-}
-.header-title{
-  font-family:var(--serif);
-  font-size:clamp(1.25rem,3vw,1.65rem);
-  font-weight:600;letter-spacing:0.05em;line-height:1.25;
-  color:#fff;
-}
-.header-divider{
-  width:1px;height:48px;
-  background:rgba(255,255,255,0.2);
-  align-self:center;
-}
-.header-badge{
-  font-family:var(--sans);
-  font-size:0.7rem;font-weight:500;
-  letter-spacing:0.1em;text-transform:uppercase;
-  color:rgba(255,255,255,0.65);
-  border:1px solid rgba(255,255,255,0.25);
-  padding:5px 12px;border-radius:2px;
-  white-space:nowrap;
-}
+.header-sub{font-family:var(--sans);font-size:.65rem;font-weight:300;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.3rem}
+.header-title{font-family:var(--serif);font-size:clamp(1.1rem,2.5vw,1.45rem);font-weight:600;letter-spacing:.04em;line-height:1.3;color:#fff}
+.header-divider{width:1px;height:44px;background:rgba(255,255,255,.2);align-self:center}
+.header-wave{height:24px;background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 50%,var(--navy-mid) 100%);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 24'%3E%3Cpath d='M0 0 Q300 24 600 12 Q900 0 1200 18 L1200 0 Z' fill='white'/%3E%3C/svg%3E") no-repeat center/cover;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 24'%3E%3Cpath d='M0 0 Q300 24 600 12 Q900 0 1200 18 L1200 0 Z' fill='white'/%3E%3C/svg%3E") no-repeat center/cover}
 
-/* ─── watermark wave bottom of header ─── */
-.header-wave{
-  height:28px;
-  background:linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, var(--navy-mid) 100%);
-  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 28'%3E%3Cpath d='M0 0 Q300 28 600 14 Q900 0 1200 20 L1200 0 Z' fill='white'/%3E%3C/svg%3E") no-repeat center/cover;
-  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 28'%3E%3Cpath d='M0 0 Q300 28 600 14 Q900 0 1200 20 L1200 0 Z' fill='white'/%3E%3C/svg%3E") no-repeat center/cover;
-}
+.container{max-width:760px;margin:0 auto;padding:2rem 1.5rem 5rem}
 
-/* ─── container ─── */
-.container{max-width:760px;margin:0 auto;padding:2.5rem 1.5rem 5rem}
+/* info card */
+.info-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:2rem;margin-bottom:1.5rem;box-shadow:0 2px 16px rgba(27,58,107,.06)}
+.info-card h2{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--navy);letter-spacing:.06em;margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--navy-pale)}
 
-/* ─── config notice ─── */
-.config-notice{
-  font-size:0.78rem;color:var(--ink-3);
-  background:rgba(27,58,107,0.05);
-  border:1px dashed var(--border);border-radius:4px;
-  padding:10px 14px;margin-bottom:1.5rem;line-height:1.6;
-}
-.config-notice code{font-family:monospace;background:var(--navy-pale);padding:1px 5px;border-radius:2px;font-size:0.9em;color:var(--navy)}
+/* notice box */
+.notice-box{background:rgba(27,58,107,.04);border:1px solid var(--navy-pale);border-left:3px solid var(--navy-mid);border-radius:0 4px 4px 0;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:.85rem;color:var(--ink-2);line-height:1.75}
+.notice-box .notice-title{font-family:var(--serif);font-weight:600;color:var(--navy);font-size:.95rem;margin-bottom:.5rem}
+.notice-box ul{padding-left:1.2rem;display:flex;flex-direction:column;gap:.3rem}
+.notice-box li{color:var(--ink-2)}
+.notice-box .warn{color:#8B2020;font-weight:500}
 
-/* ─── info card ─── */
-.info-card{
-  background:var(--white);
-  border:1px solid var(--border);border-radius:6px;
-  padding:2rem 2rem 1.75rem;margin-bottom:2rem;
-  box-shadow:0 2px 16px rgba(27,58,107,0.06);
-}
-.info-card h2{
-  font-family:var(--serif);font-size:1.05rem;font-weight:600;
-  color:var(--navy);letter-spacing:0.06em;
-  margin-bottom:1.25rem;padding-bottom:0.75rem;
-  border-bottom:1px solid var(--navy-pale);
-}
+/* timer */
+.timer-bar{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:.9rem 1.25rem;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px rgba(27,58,107,.05)}
+.timer-label{font-size:.75rem;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase}
+.timer-val{font-family:var(--serif);font-size:1.4rem;font-weight:600;color:var(--navy);letter-spacing:.05em}
+.timer-val.warn{color:#8B2020}
+
+/* fields */
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media(max-width:520px){.field-row{grid-template-columns:1fr}}
 .field{display:flex;flex-direction:column;gap:6px}
-.field label{
-  font-size:0.72rem;font-weight:500;
-  color:var(--ink-3);text-transform:uppercase;letter-spacing:0.1em;
-}
+.field label{font-size:.72rem;font-weight:500;color:var(--ink-3);text-transform:uppercase;letter-spacing:.1em}
 .field label span{color:#c0392b}
-.field input{
-  font-family:var(--sans);font-size:0.93rem;
-  padding:9px 12px;
-  border:1px solid var(--border);border-radius:3px;
-  background:var(--fog);color:var(--ink);
-  outline:none;transition:border-color 0.15s,box-shadow 0.15s;
-}
-.field input:focus{border-color:var(--navy-mid);box-shadow:0 0 0 3px rgba(42,82,152,0.1)}
+.field input{font-family:var(--sans);font-size:.93rem;padding:9px 12px;border:1px solid var(--border);border-radius:3px;background:var(--fog);color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s}
+.field input:focus{border-color:var(--navy-mid);box-shadow:0 0 0 3px rgba(42,82,152,.1)}
 .field input.error{border-color:#c0392b}
-.field-err{font-size:0.72rem;color:#c0392b;display:none}
+.field-err{font-size:.72rem;color:#c0392b;display:none}
 .field-err.show{display:block}
 
-/* ─── start row ─── */
-.start-row{
-  display:flex;justify-content:space-between;align-items:center;
-  gap:1rem;margin-bottom:1.5rem;
-  padding:1.25rem 1.5rem;
-  background:var(--white);
-  border:1px solid var(--border);border-radius:6px;
-  box-shadow:0 2px 12px rgba(27,58,107,0.05);
-}
-.start-desc{font-size:0.83rem;color:var(--ink-2);line-height:1.7}
+/* start row */
+.start-row{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.5rem;padding:1.25rem 1.5rem;background:var(--white);border:1px solid var(--border);border-radius:6px;box-shadow:0 2px 12px rgba(27,58,107,.05)}
+.start-desc{font-size:.83rem;color:var(--ink-2);line-height:1.7}
 .start-desc strong{color:var(--navy);font-weight:600}
 
-/* ─── progress ─── */
+/* progress */
 .progress-wrap{display:flex;align-items:center;gap:14px;margin-bottom:1.75rem}
-.progress-track{
-  flex:1;height:3px;
-  background:var(--navy-pale);border-radius:2px;overflow:hidden;
-}
-.progress-fill{
-  height:100%;
-  background:linear-gradient(90deg, var(--navy-mid), var(--navy-light));
-  border-radius:2px;transition:width 0.4s ease;
-}
-.progress-label{font-size:0.73rem;color:var(--ink-3);white-space:nowrap;font-weight:500;letter-spacing:0.06em}
+.progress-track{flex:1;height:3px;background:var(--navy-pale);border-radius:2px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--navy-mid),var(--navy-light));border-radius:2px;transition:width .4s ease}
+.progress-label{font-size:.73rem;color:var(--ink-3);white-space:nowrap;font-weight:500;letter-spacing:.06em}
 
-/* ─── question card ─── */
-.q-card{
-  background:var(--white);
-  border:1px solid var(--border);border-radius:6px;
-  overflow:hidden;margin-bottom:1.25rem;
-  box-shadow:0 2px 16px rgba(27,58,107,0.07);
-  animation:fadeSlide 0.3s ease;
-}
-@keyframes fadeSlide{
-  from{opacity:0;transform:translateY(8px)}
-  to{opacity:1;transform:translateY(0)}
-}
-.q-meta{
-  display:flex;align-items:center;gap:10px;
-  padding:0.8rem 1.5rem;
-  background:linear-gradient(90deg, rgba(27,58,107,0.05), rgba(74,122,196,0.04));
-  border-bottom:1px solid var(--navy-pale);
-}
-.q-num{font-size:0.68rem;font-weight:500;color:var(--ink-3);letter-spacing:0.12em;text-transform:uppercase}
-.q-cat{
-  font-size:0.65rem;font-weight:500;
-  letter-spacing:0.08em;padding:3px 9px;
-  border-radius:2px;text-transform:uppercase;
-}
+/* question card */
+.q-card{background:var(--white);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:1.25rem;box-shadow:0 2px 16px rgba(27,58,107,.07);animation:fadeSlide .3s ease}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.q-meta{display:flex;align-items:center;gap:10px;padding:.8rem 1.5rem;background:linear-gradient(90deg,rgba(27,58,107,.05),rgba(74,122,196,.04));border-bottom:1px solid var(--navy-pale)}
+.q-num{font-size:.68rem;font-weight:500;color:var(--ink-3);letter-spacing:.12em;text-transform:uppercase}
+.q-cat{font-size:.65rem;font-weight:500;letter-spacing:.08em;padding:3px 9px;border-radius:2px;text-transform:uppercase}
 .cat-eval{background:#e8eef8;color:#1b3a6b}
 .cat-dev{background:#d4f0e4;color:#1a6b45}
 .cat-comm{background:#fef3e0;color:#7a5200}
 .cat-kpi{background:#f0e8f8;color:#4a1b7a}
 .q-body{padding:1.5rem 1.5rem 0}
-.q-text{
-  font-family:var(--serif);font-size:1rem;
-  line-height:1.8;font-weight:400;
-  color:var(--ink);margin-bottom:1.25rem;
-}
-
-/* ─── options ─── */
-.options{padding:0 1.5rem 1rem;display:flex;flex-direction:column;gap:8px}
-.opt{
-  display:flex;align-items:flex-start;gap:12px;
-  padding:11px 14px;
-  border:1px solid var(--border);border-radius:4px;
-  cursor:pointer;transition:all 0.15s;
-  background:var(--fog);user-select:none;
-}
+.q-text{font-family:var(--serif);font-size:1rem;line-height:1.8;font-weight:400;color:var(--ink);margin-bottom:1.25rem}
+.options{padding:0 1.5rem 1.25rem;display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:11px 14px;border:1px solid var(--border);border-radius:4px;cursor:pointer;transition:all .15s;background:var(--fog);user-select:none}
 .opt:hover{background:var(--mist);border-color:var(--navy-light)}
-.opt.selected{border-color:var(--navy);background:rgba(27,58,107,0.05)}
-.opt.correct{border-color:var(--correct);background:var(--correct-bg)}
-.opt.wrong{border-color:var(--wrong);background:var(--wrong-bg)}
-.opt-letter{
-  width:24px;height:24px;border-radius:3px;
-  border:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  font-size:0.7rem;font-weight:500;color:var(--ink-3);
-  flex-shrink:0;transition:all 0.15s;
-}
+.opt.selected{border-color:var(--navy);background:rgba(27,58,107,.05)}
+.opt-letter{width:24px;height:24px;border-radius:3px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:500;color:var(--ink-3);flex-shrink:0;transition:all .15s}
 .opt.selected .opt-letter{background:var(--navy);border-color:var(--navy);color:#fff}
-.opt.correct  .opt-letter{background:var(--correct);border-color:var(--correct);color:#fff}
-.opt.wrong    .opt-letter{background:var(--wrong);border-color:var(--wrong);color:#fff}
-.opt-text{font-size:0.88rem;line-height:1.55;color:var(--ink-2);padding-top:1px}
-.opt.correct .opt-text{color:var(--correct)}
-.opt.wrong   .opt-text{color:var(--wrong)}
+.opt-text{font-size:.88rem;line-height:1.55;color:var(--ink-2);padding-top:1px}
 
-/* ─── explain ─── */
-.explain{
-  margin:0 1.5rem 1.5rem;padding:12px 14px;
-  background:rgba(27,58,107,0.04);
-  border-left:3px solid var(--navy-mid);border-radius:0 3px 3px 0;
-  font-size:0.84rem;color:var(--ink-2);line-height:1.65;display:none;
-}
-.explain.show{display:block}
-.explain strong{color:var(--navy);font-weight:600}
-
-/* ─── nav ─── */
-.nav{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:0}
-.btn{
-  font-family:var(--sans);font-size:0.83rem;font-weight:500;
-  padding:9px 20px;border-radius:3px;cursor:pointer;
-  border:1px solid var(--border);background:var(--white);color:var(--ink);
-  letter-spacing:0.03em;transition:all 0.15s;
-}
-.btn:hover{background:var(--mist);border-color:var(--navy-light)}
-.btn:disabled{opacity:0.3;cursor:not-allowed}
-.btn-confirm{
-  background:var(--navy);border-color:var(--navy);color:#fff;
-}
-.btn-confirm:hover{background:var(--navy-mid)}
-.btn-confirm:disabled{background:var(--border);border-color:var(--border);color:var(--ink-3);cursor:not-allowed}
-
-/* ─── result ─── */
-.result-wrap{text-align:center;padding:2rem 0;animation:fadeSlide 0.4s ease}
-.score-ring{
-  width:110px;height:110px;border-radius:50%;
-  background:linear-gradient(145deg, var(--navy-deep), var(--navy-mid));
-  display:inline-flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  margin-bottom:1.25rem;position:relative;
-}
-.score-ring::after{
-  content:"";position:absolute;inset:-5px;border-radius:50%;
-  border:1px solid var(--navy-pale);
-}
+/* result */
+.result-wrap{animation:fadeSlide .4s ease}
+.score-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:2rem;margin-bottom:1.5rem;text-align:center;box-shadow:0 2px 16px rgba(27,58,107,.07)}
+.score-ring{width:110px;height:110px;border-radius:50%;background:linear-gradient(145deg,var(--navy-deep),var(--navy-mid));display:inline-flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:1.25rem;position:relative}
+.score-ring::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--navy-pale)}
 .score-big{font-family:var(--serif);font-size:2.2rem;font-weight:600;color:#fff;line-height:1}
-.score-denom{font-size:0.72rem;color:rgba(255,255,255,0.55);line-height:1;margin-top:4px}
-.result-label{font-family:var(--serif);font-size:1.2rem;font-weight:600;color:var(--navy);margin-bottom:0.4rem}
-.result-sub{font-size:0.83rem;color:var(--ink-2);margin-bottom:2rem}
+.score-denom{font-size:.72rem;color:rgba(255,255,255,.55);line-height:1;margin-top:4px}
+.result-label{font-family:var(--serif);font-size:1.2rem;font-weight:600;color:var(--navy);margin-bottom:.4rem}
+.result-sub{font-size:.83rem;color:var(--ink-2);margin-bottom:1.5rem}
 
-.cat-table{width:100%;border-collapse:collapse;margin-bottom:2rem;font-size:0.87rem;text-align:left}
-.cat-table th{
-  background:rgba(27,58,107,0.06);padding:8px 14px;
-  font-size:0.7rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
-  color:var(--ink-3);border-bottom:1px solid var(--navy-pale);
-}
+.cat-table{width:100%;border-collapse:collapse;margin-bottom:0;font-size:.87rem;text-align:left}
+.cat-table th{background:rgba(27,58,107,.06);padding:8px 14px;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--navy-pale)}
 .cat-table td{padding:10px 14px;border-bottom:1px solid var(--navy-pale);color:var(--ink-2)}
 .cat-table td:last-child{text-align:right;font-weight:600;color:var(--navy)}
 
-.submit-area{
-  background:var(--white);border:1px solid var(--border);border-radius:6px;
-  padding:1.5rem 1.75rem;margin-bottom:1.25rem;text-align:left;
-  box-shadow:0 2px 16px rgba(27,58,107,0.06);
-}
-.submit-area h3{font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem}
-.submit-area p{font-size:0.82rem;color:var(--ink-2);margin-bottom:1.25rem;line-height:1.65}
+/* submit area */
+.submit-area{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.5rem 1.75rem;margin-bottom:1.25rem;box-shadow:0 2px 16px rgba(27,58,107,.06)}
+.submit-area h3{font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--navy);margin-bottom:.5rem}
+.submit-area p{font-size:.82rem;color:var(--ink-2);margin-bottom:1.25rem;line-height:1.65}
+.info-confirm{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.ic-item{flex:1;min-width:120px}
+.ic-label{font-size:.7rem;font-weight:500;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.ic-val{font-size:.95rem;font-weight:500;color:var(--navy)}
 .summary-row{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:1.25rem}
-.summary-pill{
-  font-size:0.72rem;padding:3px 9px;border-radius:2px;
-  background:var(--mist);color:var(--ink-3);border:1px solid var(--border);
-}
-.summary-pill.correct-pill{background:var(--correct-bg);color:var(--correct);border-color:#a8d8c0}
-.summary-pill.wrong-pill{background:var(--wrong-bg);color:var(--wrong);border-color:#f0b8b8}
+.summary-pill{font-size:.72rem;padding:3px 9px;border-radius:2px;background:var(--mist);color:var(--ink-3);border:1px solid var(--border)}
 
-.btn-submit{
-  width:100%;padding:12px;font-family:var(--sans);font-size:0.92rem;font-weight:500;
-  background:linear-gradient(135deg, var(--navy-deep), var(--navy-mid));
-  border:none;border-radius:4px;color:#fff;cursor:pointer;
-  letter-spacing:0.06em;transition:opacity 0.15s;
-}
-.btn-submit:hover{opacity:0.88}
+.btn-submit{width:100%;padding:13px;font-family:var(--sans);font-size:.95rem;font-weight:500;background:linear-gradient(135deg,var(--navy-deep),var(--navy-mid));border:none;border-radius:4px;color:#fff;cursor:pointer;letter-spacing:.06em;transition:opacity .15s}
+.btn-submit:hover{opacity:.88}
 .btn-submit:disabled{background:var(--border);color:var(--ink-3);cursor:not-allowed;opacity:1}
-.status-msg{font-size:0.82rem;text-align:center;padding:8px;border-radius:3px;margin-top:10px;display:none}
+
+.status-msg{font-size:.82rem;text-align:center;padding:8px;border-radius:3px;margin-top:10px;display:none}
 .status-msg.sending{display:block;color:var(--ink-3)}
 .status-msg.success{display:block;background:var(--correct-bg);color:var(--correct);border:1px solid #a8d8c0}
 .status-msg.fail{display:block;background:var(--wrong-bg);color:var(--wrong);border:1px solid #f0b8b8}
-.btn-restart{
-  font-family:var(--sans);font-size:0.8rem;
-  background:none;border:1px solid var(--border);color:var(--ink-3);
-  padding:7px 18px;border-radius:3px;cursor:pointer;
-  margin-top:8px;transition:all 0.15s;letter-spacing:0.03em;
-}
-.btn-restart:hover{background:var(--mist);color:var(--navy)}
 
-/* ─── footer ─── */
-.site-footer{
-  text-align:center;padding:1.5rem;
-  font-size:0.72rem;color:var(--ink-3);
-  border-top:1px solid var(--navy-pale);
-  letter-spacing:0.05em;
-}
+/* next-step notice */
+.nextstep-box{background:rgba(27,58,107,.04);border:1px solid var(--navy-pale);border-left:3px solid var(--navy-mid);border-radius:0 4px 4px 0;padding:1rem 1.25rem;margin-top:1.25rem;font-size:.84rem;color:var(--ink-2);line-height:1.75;display:none}
+.nextstep-box.show{display:block}
+.nextstep-box strong{color:var(--navy);font-weight:600}
+
+/* nav */
+.nav{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:0}
+.btn{font-family:var(--sans);font-size:.83rem;font-weight:500;padding:9px 20px;border-radius:3px;cursor:pointer;border:1px solid var(--border);background:var(--white);color:var(--ink);letter-spacing:.03em;transition:all .15s}
+.btn:hover{background:var(--mist);border-color:var(--navy-light)}
+.btn:disabled{opacity:.3;cursor:not-allowed}
+.btn-primary{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn-primary:hover{background:var(--navy-mid)}
+.btn-primary:disabled{background:var(--border);border-color:var(--border);color:var(--ink-3);cursor:not-allowed}
+
+.site-footer{text-align:center;padding:1.5rem;font-size:.72rem;color:var(--ink-3);border-top:1px solid var(--navy-pale);letter-spacing:.05em}
 </style>
 </head>
 <body>
+
 <header class="site-header">
   <div class="header-inner">
     <div class="header-logo">
@@ -344,19 +152,14 @@ body > *{position:relative;z-index:1}
     </div>
     <div class="header-divider"></div>
     <div class="header-text">
-      <div class="header-sub">Business Development · Stage 1</div>
-      <div class="header-title">BD 職位<br>第一階段評測</div>
+      <div class="header-sub">Notalone Digital PR · Recruitment</div>
+      <div class="header-title">定然數位公關行銷 BD 招募<br>第一階段筆試考題</div>
     </div>
-    <div class="header-badge">20 題<br>選擇題</div>
   </div>
   <div class="header-wave"></div>
 </header>
 
 <div class="container">
-  <div class="config-notice" id="configNotice">
-    ⚙️ <strong>管理者設定：</strong>請將下方 JS 中的 <code>GOOGLE_SCRIPT_URL</code> 替換為您的 Apps Script Web App 網址，完成後可刪除此提示框。
-    <a href="#" onclick="document.getElementById('configNotice').style.display='none';return false;" style="margin-left:8px;color:var(--navy)">隱藏</a>
-  </div>
   <div id="app"></div>
 </div>
 
@@ -366,38 +169,42 @@ body > *{position:relative;z-index:1}
 
 <script>
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxY7l51bI1DoTb9OrzE1YdyNUOSZHes2zE0rSdWzmTb_uAyk1Lv3miMBMh9AAGBCM9QjQ/exec';
+const TOTAL_SECONDS = 15 * 60;
+const LETTERS = ['A','B','C','D'];
 
 const QUESTIONS = [
-  {cat:"客戶評估",tag:"cat-eval",q:"評估一間企業「值不值得接」時，下列哪個標準最能反映 BD 的策略思維？",opts:["對方願意立刻簽約，表示誠意高","對方規模夠大，潛在預算充足","決策流程清楚且問題與我方解法有高度契合度","對方有知名品牌，有助於提升案例曝光"],ans:2,explain:"<strong>正解：C</strong> — BD 的核心是找到「問題與解法」高度匹配的客戶。品牌知名度與立即簽約意願都是次要指標，決策流程清晰才能確保資源不被浪費。"},
-  {cat:"客戶評估",tag:"cat-eval",q:"下列哪種訊號最應該讓 BD 直接排除一間潛在客戶？",opts:["決策者目前不在，需要等兩週","預算在評估中，尚未確認","決策者不明確，且對方對自身問題描述模糊","競業正在跟他們談合作"],ans:2,explain:"<strong>正解：C</strong> — 決策者不明確加上問題不清楚，代表客戶尚未進入「準備採購」狀態，繼續投入會高度浪費時間。"},
-  {cat:"客戶評估",tag:"cat-eval",q:"評估客戶 LTV（lifetime value）時，哪個因素對 BD 決策影響最大？",opts:["對方員工人數","對方行業的整體市場規模","再購率與延伸服務的可能性","對方辦公室地點是否便於拜訪"],ans:2,explain:"<strong>正解：C</strong> — LTV 的核心是「這個客戶能帶來多少長期收益」，再購率與服務延伸才是關鍵指標。"},
-  {cat:"客戶評估",tag:"cat-eval",q:"主動放棄某個客戶的決策中，最能體現 BD 專業判斷的依據是？",opts:["對方上次開會遲到，態度不夠尊重","繼續跟進的機會成本高過預期成交收益","主管建議先聚焦在其他客戶","對方已經三個月沒有回信"],ans:1,explain:"<strong>正解：B</strong> — 放棄客戶的核心邏輯是資源分配。機會成本考量才是策略性放棄，而非情緒性或被動性放棄。"},
-  {cat:"客戶評估",tag:"cat-eval",q:"在 B2B 開發情境中，下列哪種客戶特徵代表「採購週期過長，近期轉換率低」的風險訊號？",opts:["是一家新創公司","採購需要三個部門會簽且有年度預算週期","對方 CEO 很年輕","對方目前正在使用競業產品"],ans:1,explain:"<strong>正解：B</strong> — 多部門審核＋年度預算週期代表決策流程冗長，若業務目標是短期達標則要評估是否值得現階段投入。"},
-  {cat:"開發信撰寫",tag:"cat-comm",q:"100字以內的開發信，下列哪個結構最有效？",opts:["公司介紹→產品功能→價格方案→邀約會面","個人化破冰→痛點共鳴→具體價值→一個明確 CTA","問候語→感謝對方時間→詳列服務項目→期待回覆","自我介紹→公司沿革→客戶名單→邀約電話"],ans:1,explain:"<strong>正解：B</strong> — 有效開發信要先讓對方覺得「這是寫給我的」（個人化），再勾出痛點，給出明確價值主張，最後只有一個行動呼籲。"},
-  {cat:"開發信撰寫",tag:"cat-comm",q:"開發信的主旨行，下列哪個版本最可能被打開？",opts:["「合作提案—請撥冗閱讀」","「XX 公司行銷長您好，關於您近期的品牌策略」","「我們是業界最專業的行銷夥伴」","「2025 最新服務方案介紹」"],ans:1,explain:"<strong>正解：B</strong> — 個人化主旨（含對方職稱＋近期相關話題）開信率最高，讓對方感覺不是群發。"},
-  {cat:"開發信撰寫",tag:"cat-comm",q:"開發信結尾的 CTA（行動呼籲），下列哪個寫法最佳？",opts:["「希望您有空時能考慮與我們合作」","「如有任何問題歡迎隨時聯繫」","「請問您這週四或五下午有30分鐘可以通話嗎？」","「我們有多種方案，歡迎索取完整簡報」"],ans:2,explain:"<strong>正解：C</strong> — 好的 CTA 要具體（給時間選項）、低門檻（30分鐘）、只問一件事。"},
-  {cat:"會面切入技巧",tag:"cat-comm",q:"初次會面要點出客戶現行行銷的問題，最不應該用的方式是？",opts:["用數據或趨勢帶出現況，讓對方自己說出問題","先提問了解現狀，再鏡像反映對方說的困境","直接說「你們現在的做法有幾個明顯錯誤」","分享同類型企業的案例，引導對方對號入座"],ans:2,explain:"<strong>正解：C</strong> — 直接否定對方現有做法會引發防衛心。有效的顧問式銷售是讓對方「自己說出痛點」。"},
-  {cat:"會面切入技巧",tag:"cat-comm",q:"「顧問式銷售」（Consultative Selling）在初次會面的核心精神是？",opts:["盡快展示產品 demo 以留下深刻印象","先理解對方業務目標，再提出與目標對齊的解法","讓對方知道我們服務過多少知名客戶","盡量壓低報價以降低對方門檻"],ans:1,explain:"<strong>正解：B</strong> — 顧問式銷售的本質是「先診斷，後開藥」。急著展示產品是以自身為中心的銷售。"},
-  {cat:"會面切入技巧",tag:"cat-comm",q:"SPIN 提問法中，「N（Need-payoff）」問題的目的是什麼？",opts:["挖掘對方目前遇到的具體問題","讓對方自己說出解決問題後的價值","了解對方的預算上限","確認對方的採購決策流程"],ans:1,explain:"<strong>正解：B</strong> — Need-payoff 問題讓「買方」主動說出「如果問題解決了對你們有多大幫助」，比 BD 自己說更有說服力。"},
-  {cat:"第一個月準備",tag:"cat-dev",q:"BD 第一個月的主要任務應該是？",opts:["立刻約客戶開會，越多越好","研究市場、競業、理想客戶輪廓（ICP），建立開發優先清單","等公司給名單再開始行動","先完成10封開發信再評估成效"],ans:1,explain:"<strong>正解：B</strong> — 第一個月是「磨刀不誤砍柴工」，清楚定義 ICP 與競業定位，讓後續開發效率大幅提升。"},
-  {cat:"第一個月準備",tag:"cat-dev",q:"建立 ICP（理想客戶輪廓）時，下列哪個維度最常被忽略但極其重要？",opts:["行業別","公司規模","內部決策者的角色與痛點","地理位置"],ans:2,explain:"<strong>正解：C</strong> — 行業和規模是容易量化的篩選條件，但「誰有決策權、他在乎什麼」才是開發信和話術設計的核心依據。"},
-  {cat:"第一個月準備",tag:"cat-dev",q:"進入新市場前，BD 應優先分析競業的哪個面向？",opts:["競業的辦公室地點","競業的定價、訴求差異與客戶評價","競業的員工規模","競業的創辦人背景"],ans:1,explain:"<strong>正解：B</strong> — 競業分析的重點是找出「差異化定位」的空間：他們怎麼訂價、對誰說什麼、客戶不滿意什麼。"},
-  {cat:"第2–3個月開發",tag:"cat-dev",q:"第2-3個月的多管道開發中，LinkedIn 冷開發最有效的操作是？",opts:["直接發產品介紹連結","先對目標按讚、留言互動，再發個人化訊息","發布公司廣告貼文讓對方看到","請CEO直接轉介"],ans:1,explain:"<strong>正解：B</strong> — 先建立「臉熟」再接觸，能大幅提升開信與回覆率。直接冷發產品連結在 LinkedIn 的回覆率接近零。"},
-  {cat:"第2–3個月開發",tag:"cat-dev",q:"電話開發（Cold Call）的黃金開場白應包含哪些元素？",opts:["詳細介紹公司背景與服務項目","確認對方是否為決策者，並說明此通電話的具體目的","立刻詢問對方是否有預算","先問對方現在是否方便，再說明來意"],ans:1,explain:"<strong>正解：B</strong> — 冷電話的黃金前15秒要讓對方知道「你是誰、你要說什麼、對他有什麼好處」，確認決策者身份避免浪費雙方時間。"},
-  {cat:"第2–3個月開發",tag:"cat-dev",q:"當潛在客戶在第一次接觸後說「我再想想」時，最佳的後續行動是？",opts:["等對方主動聯繫","一週後再發一封同樣的開發信","確認對方考量點並約定下次確認時間點","立刻提供折扣以加速決策"],ans:2,explain:"<strong>正解：C</strong> — 「再想想」通常代表有未解的疑慮，BD 應主動追問「您主要在考量哪些因素？」並約定 follow-up 時間。"},
-  {cat:"KPI 定義",tag:"cat-kpi",q:"衡量 BD 前90天成效，下列哪組 KPI 組合最合理？",opts:["發出開發信數量＋社群粉絲成長","初次會面場數＋進入報價階段客戶數＋成交件數","開發信開信率＋網站流量","接觸公司總數＋LinkedIn 連結人數"],ans:1,explain:"<strong>正解：B</strong> — 好的 BD KPI 要同時追蹤「活動量（會面場數）」、「管線質量（進入報價）」與「結果（成交）」。"},
-  {cat:"KPI 定義",tag:"cat-kpi",q:"若90天內成交數為零，但管線中有5個客戶已進入提案階段，這代表什麼？",opts:["這90天完全失敗，需要重新檢討策略","活動量不足，應該接觸更多客戶","開發策略有效，需要評估的是轉換障礙而非開發量","應立刻降價以加速成交"],ans:2,explain:"<strong>正解：C</strong> — 有多個客戶進入提案代表 ICP 定位正確、開發信有效，問題在「提案到成交」的轉換環節。"},
-  {cat:"KPI 定義",tag:"cat-kpi",q:"BD 的「管線健康度」最適合用哪個指標組合來追蹤？",opts:["每日撥出電話數＋每日發信數","各階段客戶數量＋各階段平均停留時間","成交總金額÷開發成本","客戶滿意度評分"],ans:1,explain:"<strong>正解：B</strong> — 健康的銷售管線不只看「有多少機會」，還要看「每個階段卡了多久」，若某環節停滯時間過長代表有系統性問題。"}
+  {cat:"客戶評估",tag:"cat-eval",q:"你手上同時有三個潛在客戶：A 決策者明確但預算要到下季才核，B 現在有預算且正在評估三家供應商，C 老闆口頭同意但需走兩個月內部簽核。依資源效益，開發優先順序應該是？",opts:["A → B → C，決策者明確才能確保後續會面有意義，預算空窗期可同步暖身","B → A → C，有即時預算優先，簽核流程冗長的客戶投入產出比過低應排後","B → C → A，即時預算優先，口頭承諾次之","C → B → A，口頭承諾代表決策者已點頭，後續阻力最小"],ans:2},
+  {cat:"客戶評估",tag:"cat-eval",q:"一位客戶對提案很感興趣，但每次會議後都說「我回去跟團隊討論」，已歷經四次會議、三個月。這個訊號最準確的解讀是？",opts:["對方內部流程慢，且跨部門協調需要較長時間，應耐心等待並定期提供新資訊維繫熱度","真正的決策者從未出現，你一直在跟無決策權的人談","對方有興趣但預算尚未核准，財務週期影響推進速度，需要等待合適時間點再跟進","競業報價更低，對方在多方比價後持觀望態度，等待你主動讓步或提出更具體的優惠條件"],ans:1},
+  {cat:"客戶評估",tag:"cat-eval",q:"評估客戶 LTV（lifetime value）時，哪個因素對 BD 決策影響最大？",opts:["再購率與延伸服務的可能性","對方所在行業的整體市場規模與未來成長趨勢","對方員工人數、組織層級與部門複雜度","對方辦公室地點與拜訪往返的時間與交通成本"],ans:0},
+  {cat:"客戶評估",tag:"cat-eval",q:"你拜訪一間企業，行銷總監說「我們去年剛換了代理商，目前合作還算順暢」。你接下來最應該做的是？",opts:["比較你與現任代理商的服務差異，並提出具體的優勢對照表","詢問對方對現任代理商目前有哪些不滿意或希望改善的地方","留下完整的服務簡介資料，告知對方有需要時隨時可聯繫","認可現狀，轉移焦點到今年業務目標與現有合作的缺口"],ans:3},
+  {cat:"客戶評估",tag:"cat-eval",q:"跟進超過半年的潛在客戶，下列哪個情境最能支持「主動放棄」的決策？",opts:["對方窗口換人，新窗口與你毫無交情，需要重新建立信任關係才能繼續推進","同業剛拿下他們的單，你研判先機已失，繼續投入的心理成本也難以負荷","對方決策條件已鎖定你無法滿足的項目，且短期不會改變","對方預算被砍，財務長明確表示本季所有行銷專案全面暫停執行"],ans:2},
+  {cat:"開發信撰寫",tag:"cat-comm",q:"100字以內的開發信，下列哪個結構最有效？",opts:["公司介紹 → 產品功能列點 → 價格方案說明 → 邀約會面","個人化破冰 → 痛點共鳴 → 具體價值 → 單一 CTA","問候語 → 感謝撥冗閱讀 → 服務項目條列 → 期待回覆指教","自我介紹 → 公司沿革與規模 → 過往客戶名單 → 邀約電話說明"],ans:1},
+  {cat:"成交技巧",tag:"cat-comm",q:"提案結束後，客戶說「整體方向不錯，但我需要再想想」。你最應該如何回應？",opts:["補充說明方案的彈性空間，讓對方感覺沒有壓力，可以充分評估後再做決定","感謝對方給予時間，主動告知有任何問題都可以隨時聯繫你進一步說明","當場追問對方還有哪些疑慮，逐一在會議室內解決所有障礙再結束會議","確認主要考量點，並約定後續確認的時間節點"],ans:3},
+  {cat:"成交技巧",tag:"cat-comm",q:"客戶在最後一輪談判時說「你們的報價比競業貴了15%，我需要你給我一個理由」。下列哪個回應最有效？",opts:["把15%的差價換算成對方業務目標的具體影響值","提供一個限時優惠折扣，縮小與競業的實際價差，並說明此優惠僅限本次合作","說明你們的服務口碑、團隊資歷與交付品質均顯著優於競業同級方案","詢問競業的完整報價內容與服務規格，找出條件差異後再進行逐項對比說明"],ans:0},
+  {cat:"會面技巧",tag:"cat-comm",q:"初次會面，對方 CEO 在10分鐘內把話題導向「你們報價大概多少」。你最應該如何回應？",opts:["直接給一個具體報價區間，讓對方感受到你的透明與誠意","說明報價需要先了解需求才能提供，目前無法給出任何數字參考","給概略區間，再接「實際費用取決於您要解決的核心問題」","先不回答，表示今天目的是了解需求，完整報價等下次會議再正式提交說明"],ans:2},
+  {cat:"會面技巧",tag:"cat-comm",q:"你在提案中提到「貴公司社群互動率低於業界平均」，對方行銷主管立刻面露不悅並問「你的數據從哪來的」。最佳應對方式是？",opts:["立刻道歉並收回這個說法，表示是參考資料有誤，改談其他比較有把握的優勢面向","說明數據來源，再把焦點轉到「這個現象對貴公司意味著什麼」","據理力爭，補充更多佐證數據與研究報告，強化論點的可信度與說服力","承認數據存在一定誤差範圍，但強調這個議題值得雙方一起深入探討與驗證"],ans:1},
+  {cat:"會面技巧",tag:"cat-comm",q:"SPIN 提問法中，「N（Need-payoff）」問題的目的是什麼？",opts:["確認對方的採購時間表、預算上限與內部審核流程","挖掘對方目前在業務推進中遇到的具體困難與痛點","了解對方過去嘗試過哪些解決方案以及為何最終未能奏效","讓對方自己說出解決問題後能帶來的價值"],ans:3},
+  {cat:"第一個月",tag:"cat-dev",q:"你加入一家有5年歷史的公關公司擔任 BD，有舊客戶資料但從未系統化整理開發流程。第一個月最優先的任務是？",opts:["立刻安排拜訪所有舊客戶，快速建立個人信任關係與品牌熟悉度","設計標準化開發信模板與話術腳本，讓自己能快速產出穩定的接觸活動量","盤點舊客戶共同特徵建立 ICP，再評估現有名單與市場機會","研究競業的客戶組合與服務定位，找出市場上尚未被滿足的目標客群缺口"],ans:2},
+  {cat:"第一個月",tag:"cat-dev",q:"公司的 ICP 定義模糊，同事們對「理想客戶」各說各話。要快速建立有效共識，最可靠的方法是？",opts:["分析過去12個月成交客戶的共同特徵，找出轉換率最高的客群","安排跨部門工作坊，讓業務、行銷、客服三方共同討論並票選出最具共識的 ICP 定義版本","參考同產業規模相近的競業所公開的目標客群定義，作為自己 ICP 的初始版本","先設定一個假設性 ICP，執行一輪完整的開發活動後，再根據實際回饋進行修正調整"],ans:0},
+  {cat:"第一個月",tag:"cat-dev",q:"競業的客戶評價中反覆出現「企劃創意很好，但實際內容產出與上線執行經常延遲或走樣」。這個資訊對你的開發策略最直接的應用是？",opts:["在提案中強調你們的企劃創意比競業更具突破性與視覺張力","以「創意如期落地執行」為核心差異化訴求，搭配準時交付率與修改次數數據","在提案中直接列舉競業延遲案例，對比你們的交付紀錄以強化說服力","主動聯繫競業的不滿客戶，提供前三個月免費試用以吸引轉換意願強的潛在名單"],ans:1},
+  {cat:"2–3個月",tag:"cat-dev",q:"初次拜訪時，客戶直接挑戰：「做社群品牌形象到底有什麼實質價值？我們又看不到直接的業績回報。」你最應該如何回應？",opts:["說明社群品牌是長期投資，短期難以量化，但對企業整體形象有不可忽視的累積效益","分享同產業品牌社群經營的成功案例，說明他們的粉絲成長數字與互動率提升幅度","反問對方目前如何評估行銷投資的回報，再對應說明社群指標與業績的關聯性","先問對方的業績目標，再把社群指標與其直接掛鉤說明"],ans:3},
+  {cat:"2–3個月",tag:"cat-dev",q:"電話開發（Cold Call）的黃金開場白應包含哪些元素？",opts:["確認對方是否為決策者，並說明此通電話的具體目的","詳細介紹公司背景、服務項目與近期合作的代表性客戶名單","先詢問對方現在是否方便接聽，再完整說明來電的目的與預計通話時間","立刻切入詢問對方目前的行銷預算規模與是否有外包服務的採購計畫"],ans:0},
+  {cat:"2–3個月",tag:"cat-dev",q:"同一潛在客戶已 follow up 三次（信件兩次、電話一次）都沒有回應。第四次接觸應該怎麼做？",opts:["再寄一封更完整的提案說明信，補充更多數據、案例與服務細節來加強說服力","發一封 break-up email，表示這是最後聯繫，給對方低門檻的回應機會","改換聯絡窗口，透過對方公司的其他部門同事建立新的接觸管道與信任基礎","完全暫停所有聯繫，等待三到六個月後再以全新的切入角度重新嘗試接觸對方"],ans:1},
+  {cat:"KPI 定義",tag:"cat-kpi",q:"衡量 BD 前90天成效，下列哪組 KPI 組合最合理？",opts:["每週發出開發信數量、社群新增粉絲數、品牌提及次數","開發信平均開信率、官網自然流量增幅、LinkedIn 互動率","累計接觸公司總數、LinkedIn 新增連結人數、電話撥出次數","初次會面場數＋進入報價階段客戶數＋成交件數"],ans:3},
+  {cat:"KPI 定義",tag:"cat-kpi",q:"第75天，目標成交3件，目前成交1件、2件在提案審核中、3件初次會面後無後續。向主管彙報最應該怎麼說？",opts:["成交1件，2件審核中預計本月結果，3件停滯原因已分析並列出調整方向","目前落後目標，已重新排定優先順序，本週起加大對審核中客戶的跟進密度與力道","管線整體健康，審核中的兩件若順利成交即可達標，對最終結果保持樂觀態度","外部環境影響客戶決策週期拉長，請求將達標時間延至下個月底以確保品質與準確性"],ans:0},
+  {cat:"KPI 定義",tag:"cat-kpi",q:"你的「初次會面→提案」轉換率只有20%，同事是45%。在找出根本原因前，最值得優先驗證的假設是？",opts:["你接觸的目標客群與同事不同，ICP 的精準度與契合度存在明顯落差","你的提案視覺設計與內容架構不如同事，導致對方評估後決定不繼續推進","你在初次會面中未能讓對方說出具體痛點，導致提案缺乏針對性","你的會後 follow up 速度比同事慢，對方在等待期間失去溫度與購買意願"],ans:2}
 ];
-
-const LETTERS = ['A','B','C','D'];
 
 let state = {
   name:'', phone:'',
+  phase:'info', // info | quiz | result
   cur:0,
   answers:Array(QUESTIONS.length).fill(null),
-  revealed:Array(QUESTIONS.length).fill(false),
-  submitted:false
+  submitted:false,
+  timerStarted:false,
+  secondsLeft:TOTAL_SECONDS,
+  timerInterval:null,
+  lateSeconds:0
 };
 
 function catStats(){
@@ -409,27 +216,72 @@ function catStats(){
   });
   return cats;
 }
-function totalScore(){return state.answers.filter((a,i)=>a===QUESTIONS[i].ans).length}
+function totalScore(){
+  const raw=state.answers.filter((a,i)=>a===QUESTIONS[i].ans).length;
+  const rawPct=Math.round((raw/QUESTIONS.length)*100);
+  // deduct for lateness: each 30s over = -1 point, max -10
+  const deduct=state.lateSeconds>0?Math.min(10,Math.floor(state.lateSeconds/30)):0;
+  return Math.max(0,rawPct-deduct);
+}
+function rawCorrect(){return state.answers.filter((a,i)=>a===QUESTIONS[i].ans).length;}
 
 function render(){
-  const app=document.getElementById('app');
-  if(state.cur>=QUESTIONS.length)renderResult(app);
-  else renderQuestion(app);
+  if(state.phase==='info')renderInfo();
+  else if(state.phase==='quiz')renderQuiz();
+  else renderResult();
 }
 
-function renderQuestion(app){
+function renderInfo(){
+  document.getElementById('app').innerHTML=`
+    <div class="notice-box">
+      <div class="notice-title">📋 答題說明</div>
+      <p style="margin-bottom:.6rem">恭喜您通過履歷初審！接下來將進入筆試問卷環節。</p>
+      <ul>
+        <li>本次測驗包含 <strong>20 題</strong>實務選擇題，請於 <strong>15 分鐘內</strong>完成作答</li>
+        <li class="warn">超過時間將酌情扣分處理</li>
+        <li class="warn">每人僅一次作答機會，答卷送出後無法重新作答</li>
+        <li>從填寫完姓名與電話開始計時，請準備一個<strong>完整安靜、不被打擾</strong>的作答時間</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h2>填寫應試者資料</h2>
+      <div class="field-row">
+        <div class="field">
+          <label for="candidateName">姓名 <span>*</span></label>
+          <input type="text" id="candidateName" placeholder="王小明" autocomplete="name">
+          <span class="field-err" id="nameErr">請填寫姓名</span>
+        </div>
+        <div class="field">
+          <label for="candidatePhone">聯絡電話 <span>*</span></label>
+          <input type="tel" id="candidatePhone" placeholder="0912-345-678" autocomplete="tel">
+          <span class="field-err" id="phoneErr">請填寫聯絡電話</span>
+        </div>
+      </div>
+    </div>
+    <div class="start-row">
+      <div class="start-desc">確認資料無誤後，點擊右側按鈕即開始計時。<br><strong>請確保有15分鐘不被打擾的時間再開始。</strong></div>
+      <button class="btn btn-primary" style="white-space:nowrap;flex-shrink:0" onclick="startQuiz()">開始作答 →</button>
+    </div>`;
+}
+
+function renderQuiz(){
   const q=QUESTIONS[state.cur];
-  const done=state.revealed[state.cur];
   const pct=Math.round((state.cur/QUESTIONS.length)*100);
+  const m=Math.floor(state.secondsLeft/60).toString().padStart(2,'0');
+  const s=(state.secondsLeft%60).toString().padStart(2,'0');
+  const timerWarn=state.secondsLeft<120;
+  const isLast=state.cur===QUESTIONS.length-1;
+
   const optsHTML=q.opts.map((o,i)=>{
-    let cls='opt';
-    if(done){if(i===q.ans)cls+=' correct';else if(i===state.answers[state.cur]&&state.answers[state.cur]!==q.ans)cls+=' wrong';}
-    else if(state.answers[state.cur]===i)cls+=' selected';
+    let cls='opt'+(state.answers[state.cur]===i?' selected':'');
     return `<div class="${cls}" onclick="pick(${i})"><div class="opt-letter">${LETTERS[i]}</div><div class="opt-text">${o}</div></div>`;
   }).join('');
-  const canConfirm=state.answers[state.cur]!==null&&!done;
-  const isLast=state.cur===QUESTIONS.length-1;
-  app.innerHTML=`
+
+  document.getElementById('app').innerHTML=`
+    <div class="timer-bar">
+      <span class="timer-label">剩餘時間</span>
+      <span class="timer-val${timerWarn?' warn':''}" id="timerDisplay">${m}:${s}</span>
+    </div>
     <div class="progress-wrap">
       <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
       <div class="progress-label">${state.cur+1} / ${QUESTIONS.length}</div>
@@ -441,66 +293,110 @@ function renderQuestion(app){
       </div>
       <div class="q-body"><div class="q-text">${q.q}</div></div>
       <div class="options">${optsHTML}</div>
-      <div class="explain ${done?'show':''}">${q.explain}</div>
     </div>
     <div class="nav">
       <button class="btn" onclick="prev()" ${state.cur===0?'disabled':''}>← 上一題</button>
-      <button class="btn btn-confirm" onclick="confirm_ans()" ${!canConfirm?'disabled':''}>確認答案</button>
-      <button class="btn" onclick="next()">${isLast?'查看結果 →':'下一題 →'}</button>
+      <span style="font-size:.78rem;color:var(--ink-3)">${state.answers.filter(a=>a!==null).length} / ${QUESTIONS.length} 已作答</span>
+      ${isLast
+        ? `<button class="btn btn-primary" onclick="finishQuiz()">交卷 →</button>`
+        : `<button class="btn btn-primary" onclick="next()" ${state.answers[state.cur]===null?'disabled':''}>下一題 →</button>`
+      }
     </div>`;
 }
 
-function renderResult(app){
+function renderResult(){
   const score=totalScore();
+  const raw=rawCorrect();
   const cats=catStats();
-  const pct=Math.round((score/QUESTIONS.length)*100);
-  let label,sub;
-  if(score>=18){label='優秀';sub='BD 核心概念紮實，具備即戰力';}
-  else if(score>=14){label='良好';sub='基礎扎實，部分細節可進一步強化';}
-  else if(score>=10){label='尚可';sub='建議深化 BD 方法論與實戰案例';}
-  else{label='需加強';sub='建議系統性學習 B2B 業務開發知識';}
+  const pillsHTML=state.answers.map((a,i)=>{
+    const ok=a===QUESTIONS[i].ans;
+    return `<span class="summary-pill" style="background:${ok?'var(--correct-bg)':'var(--wrong-bg)'};color:${ok?'var(--correct)':'var(--wrong)'};border-color:${ok?'#a8d8c0':'#f0b8b8'}">Q${i+1} ${ok?'✓':'✗'}</span>`;
+  }).join('');
   const catRows=Object.entries(cats).map(([name,d])=>`<tr><td>${name}</td><td>${d.correct} / ${d.total}</td></tr>`).join('');
-  const pillsHTML=state.answers.map((a,i)=>{const ok=a===QUESTIONS[i].ans;return`<span class="summary-pill ${ok?'correct-pill':'wrong-pill'}">Q${i+1} ${ok?'✓':'✗'}</span>`;}).join('');
-  app.innerHTML=`
+  const lateNote=state.lateSeconds>0?`<div style="font-size:.78rem;color:#8B2020;margin-top:.3rem">逾時 ${Math.ceil(state.lateSeconds/60)} 分鐘，酌情扣 ${Math.min(10,Math.floor(state.lateSeconds/30))} 分</div>`:'';
+
+  document.getElementById('app').innerHTML=`
     <div class="result-wrap">
-      <div class="score-ring"><div class="score-big">${score}</div><div class="score-denom">/ ${QUESTIONS.length}</div></div>
-      <div class="result-label">${label}</div>
-      <div class="result-sub">${sub}（正確率 ${pct}%）</div>
-      <table class="cat-table">
-        <thead><tr><th>類別</th><th>得分</th></tr></thead>
-        <tbody>${catRows}</tbody>
-      </table>
       <div class="submit-area">
-        <h3>提交答題結果</h3>
-        <p>請確認您的姓名與聯絡電話無誤，點擊下方按鈕將結果送出給面試官。</p>
-        <div style="display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap">
-          <div style="flex:1;min-width:130px">
-            <div style="font-size:0.7rem;font-weight:500;color:var(--ink-3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px">姓名</div>
-            <div style="font-size:0.95rem;font-weight:500;color:var(--navy)" id="confirm-name"></div>
-          </div>
-          <div style="flex:1;min-width:130px">
-            <div style="font-size:0.7rem;font-weight:500;color:var(--ink-3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px">聯絡電話</div>
-            <div style="font-size:0.95rem;font-weight:500;color:var(--navy)" id="confirm-phone"></div>
-          </div>
-          <div style="flex:0 0 auto">
-            <div style="font-size:0.7rem;font-weight:500;color:var(--ink-3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px">得分</div>
-            <div style="font-size:0.95rem;font-weight:600;color:var(--navy)">${score} / ${QUESTIONS.length}</div>
-          </div>
+        <h3>提交答卷</h3>
+        <p>請確認姓名與聯絡電話無誤後送出。答卷僅能提交一次，送出後無法修改。</p>
+        <div class="info-confirm">
+          <div class="ic-item"><div class="ic-label">姓名</div><div class="ic-val" id="confirm-name"></div></div>
+          <div class="ic-item"><div class="ic-label">聯絡電話</div><div class="ic-val" id="confirm-phone"></div></div>
         </div>
         <div class="summary-row">${pillsHTML}</div>
-        <button class="btn-submit" onclick="submitResult()" id="btnSubmit" ${state.submitted?'disabled':''}>${state.submitted?'✓ 已送出':'送出結果給面試官'}</button>
+        <button class="btn-submit" onclick="submitResult()" id="btnSubmit" ${state.submitted?'disabled':''}>
+          ${state.submitted?'✓ 答卷已送出':'送出答卷'}
+        </button>
         <div class="status-msg" id="statusMsg"></div>
       </div>
-      <button class="btn-restart" onclick="restart()">重新作答</button>
+
+      <div class="score-card">
+        <div class="score-ring">
+          <div class="score-big">${score}</div>
+          <div class="score-denom">/ 100</div>
+        </div>
+        <div class="result-label">${score>=85?'優秀':score>=70?'良好':score>=55?'尚可':'需加強'}</div>
+        <div class="result-sub">答對 ${raw} / ${QUESTIONS.length} 題（正確率 ${Math.round(raw/QUESTIONS.length*100)}%）${state.lateSeconds>0?'，含逾時扣分':''}</div>
+        ${lateNote}
+        <div style="margin-top:1.25rem">
+          <table class="cat-table">
+            <thead><tr><th>類別</th><th>得分</th></tr></thead>
+            <tbody>${catRows}</tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="nextstep-box" id="nextstepBox">
+        <strong>📩 接下來的步驟</strong><br>
+        第一階段筆試結果，會根據您的答題情況決定是否進入第二階段面試。<br>
+        請在送出答卷後，<strong>主動傳訊息給 HR 確認成績</strong>，並等候 HR 的面試結果通知。<br>
+        感謝您參與定然數位公關的招募流程，期待與您進一步交流。
+      </div>
     </div>`;
+
   document.getElementById('confirm-name').textContent=state.name||'（未填寫）';
   document.getElementById('confirm-phone').textContent=state.phone||'（未填寫）';
+  if(state.submitted)document.getElementById('nextstepBox').classList.add('show');
 }
 
-function pick(i){if(state.revealed[state.cur])return;state.answers[state.cur]=i;render();}
-function confirm_ans(){if(state.answers[state.cur]===null||state.revealed[state.cur])return;state.revealed[state.cur]=true;render();}
+function pick(i){state.answers[state.cur]=i;render();}
 function prev(){if(state.cur>0){state.cur--;render();}}
-function next(){state.cur++;render();}
+function next(){if(state.answers[state.cur]===null)return;state.cur++;render();}
+
+function finishQuiz(){
+  const unanswered=state.answers.filter(a=>a===null).length;
+  if(unanswered>0){
+    if(!confirm(`您還有 ${unanswered} 題未作答，確定要交卷嗎？`))return;
+  }
+  clearInterval(state.timerInterval);
+  state.phase='result';
+  render();
+}
+
+function startTimer(){
+  state.timerInterval=setInterval(()=>{
+    if(state.secondsLeft>0){
+      state.secondsLeft--;
+      const el=document.getElementById('timerDisplay');
+      if(el){
+        const m=Math.floor(state.secondsLeft/60).toString().padStart(2,'0');
+        const s=(state.secondsLeft%60).toString().padStart(2,'0');
+        el.textContent=m+':'+s;
+        el.className='timer-val'+(state.secondsLeft<120?' warn':'');
+      }
+    } else {
+      state.lateSeconds++;
+      const el=document.getElementById('timerDisplay');
+      if(el){
+        const ms=Math.floor(state.lateSeconds/60).toString().padStart(2,'0');
+        const ss=(state.lateSeconds%60).toString().padStart(2,'0');
+        el.textContent='+'+ms+':'+ss;
+        el.className='timer-val warn';
+      }
+    }
+  },1000);
+}
 
 function validateInfo(){
   const n=document.getElementById('candidateName');
@@ -519,53 +415,52 @@ function startQuiz(){
   if(!validateInfo())return;
   state.name=document.getElementById('candidateName').value.trim();
   state.phone=document.getElementById('candidatePhone').value.trim();
-  state.cur=0;render();
+  state.phase='quiz';
+  state.cur=0;
+  render();
+  startTimer();
 }
 
 async function submitResult(){
   const score=totalScore();
+  const raw=rawCorrect();
   const cats=catStats();
   const now=new Date().toLocaleString('zh-TW',{timeZone:'Asia/Taipei'});
-  const detailArr=state.answers.map((a,i)=>{const ok=a===QUESTIONS[i].ans;const sel=a!==null?LETTERS[a]:'未作答';return`Q${i+1}:${sel}(${ok?'✓':'✗'})`;});
+  const details=state.answers.map((a,i)=>{
+    const ok=a===QUESTIONS[i].ans;
+    const sel=a!==null?LETTERS[a]:'未作答';
+    return `Q${i+1}:${sel}(${ok?'✓':'✗'})`;
+  });
   const catSummary=Object.entries(cats).map(([n,d])=>`${n}:${d.correct}/${d.total}`).join(' | ');
-  const payload={name:state.name,phone:state.phone,score,total:QUESTIONS.length,pct:Math.round((score/QUESTIONS.length)*100),catSummary,details:detailArr.join(', '),submittedAt:now};
+  const payload={
+    name:state.name,phone:state.phone,
+    score,rawCorrect:raw,total:QUESTIONS.length,
+    pct:Math.round(raw/QUESTIONS.length*100),
+    lateSeconds:state.lateSeconds,
+    catSummary,details:details.join(', '),submittedAt:now
+  };
+
   const btn=document.getElementById('btnSubmit');
   const msg=document.getElementById('statusMsg');
-  btn.disabled=true;msg.className='status-msg sending';msg.textContent='送出中，請稍候…';
+  btn.disabled=true;
+  msg.className='status-msg sending';
+  msg.textContent='送出中，請稍候…';
+
   try{
     await fetch(GOOGLE_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    state.submitted=true;msg.className='status-msg success';msg.textContent='✓ 結果已成功送出，面試官將在收到後與您聯繫。';btn.textContent='✓ 已送出';
-  }catch(e){msg.className='status-msg fail';msg.textContent='送出失敗，請確認網路連線後再試一次。';btn.disabled=false;}
+    state.submitted=true;
+    msg.className='status-msg success';
+    msg.textContent='✓ 答卷已成功送出，請主動傳訊息給 HR 確認成績。';
+    btn.textContent='✓ 答卷已送出';
+    document.getElementById('nextstepBox').classList.add('show');
+  } catch(e){
+    msg.className='status-msg fail';
+    msg.textContent='送出失敗，請確認網路連線後再試一次。';
+    btn.disabled=false;
+  }
 }
 
-function restart(){
-  state={name:state.name,phone:state.phone,cur:0,answers:Array(QUESTIONS.length).fill(null),revealed:Array(QUESTIONS.length).fill(false),submitted:false};
-  render();
-}
-
-(function initInfoForm(){
-  const app=document.getElementById('app');
-  app.innerHTML=`
-    <div class="info-card">
-      <h2>填寫應試者資料</h2>
-      <div class="field-row">
-        <div class="field">
-          <label for="candidateName">姓名 <span>*</span></label>
-          <input type="text" id="candidateName" placeholder="王小明" autocomplete="name">
-          <span class="field-err" id="nameErr">請填寫姓名</span>
-        </div>
-        <div class="field">
-          <label for="candidatePhone">聯絡電話 <span>*</span></label>
-          <input type="tel" id="candidatePhone" placeholder="0912-345-678" autocomplete="tel">
-          <span class="field-err" id="phoneErr">請填寫聯絡電話</span>
-        </div>
-      </div>
-    </div>
-    <div class="start-row">
-      <div class="start-desc">本測驗共 <strong>20 題</strong>，每題皆可查看解析說明。<br>完成後請送出結果，面試官將收到您的得分紀錄。</div>
-      <button class="btn btn-confirm" style="white-space:nowrap;flex-shrink:0" onclick="startQuiz()">開始作答 →</button>
-    </div>`;
-})();
+render();
 </script>
 </body>
 </html>
